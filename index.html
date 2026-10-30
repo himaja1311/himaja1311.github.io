@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Himaja A - Partner Success and Channel Manager. 6+ years managing OEM, EPC and distribution partners. Ex-Schneider Electric.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Himaja A | Partner Success &amp; Channel Manager">
+<meta property="og:description" content="Owned ~$11M in annual channel targets at Schneider Electric. Case studies, results and career.">
+<meta property="og:image" content="https://himaja1311.github.io/banner.png">
+<meta property="og:url" content="https://himaja1311.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<title>Himaja A Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a single-line-diagram spine — one vertical "busbar" runs down the page and each section taps off it */
+:root{
+  --bg:#F2F4F6; --surface:#FFFFFF; --ink:#16233A; --muted:#55627A; --line:#D5DBE4;
+  --copper:#B5652A; --copper-soft:#F3E4D7; --bar:#2C4A73;
+  --display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1624; --surface:#172133; --ink:#E7ECF4; --muted:#A3AEC2; --line:#2A3850;
+  --copper:#E39457; --copper-soft:#3A2A1E; --bar:#7FA3D6; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#0F1624; --surface:#172133; --ink:#E7ECF4; --muted:#A3AEC2; --line:#2A3850;
+  --copper:#E39457; --copper-soft:#3A2A1E; --bar:#7FA3D6; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:980px;margin:0 auto;padding-block:48px 64px;display:grid;gap:64px}
+h1,h2,h3{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.4rem,6vw,3.8rem);font-weight:700;letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:700}
+h3{font-size:1.15rem;font-weight:700}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--copper)}
+.muted{color:var(--muted)}
+a{color:var(--bar)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+
+/* spine */
+section{position:relative;padding-left:28px;display:grid;gap:20px}
+section::before{content:"";position:absolute;left:0;top:6px;bottom:-64px;width:3px;background:var(--line)}
+section:last-of-type::before{bottom:0}
+section::after{content:"";position:absolute;left:-5px;top:4px;width:13px;height:13px;border-radius:50%;
+  background:var(--bg);border:3px solid var(--copper)}
+
+/* hero */
+.hero{display:grid;gap:18px}
+.hero .role{font-family:var(--display);font-size:clamp(1.1rem,2.4vw,1.4rem);color:var(--bar);font-weight:500}
+.hero .lede{max-width:62ch;font-size:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:.78rem;padding:4px 10px;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+.contact{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;font-size:.95rem}
+.copy{font:inherit;font-size:.85rem;padding:6px 12px;border-radius:4px;border:1px solid var(--copper);background:transparent;color:var(--copper);cursor:pointer}
+.copy:hover{background:var(--copper-soft)}
+
+/* target book chart */
+.book{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:24px;display:grid;gap:16px}
+.row{display:grid;grid-template-columns:minmax(120px,190px) 1fr 80px;gap:12px;align-items:center}
+.track{height:18px;background:var(--bg);border-radius:2px;overflow:hidden}
+.fill{height:100%;background:var(--bar)}
+.val{font-family:var(--mono);font-size:.9rem;text-align:right;font-variant-numeric:tabular-nums}
+.lbl{font-size:.95rem}
+.note{font-size:.85rem;color:var(--muted)}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.metric{background:var(--surface);padding:20px;display:grid;gap:4px;align-content:start}
+.metric .n{font-family:var(--display);font-size:2.2rem;font-weight:700;color:var(--copper);font-variant-numeric:tabular-nums}
+.metric .d{font-size:.95rem}
+.metric .w{font-family:var(--mono);font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+
+/* cases */
+.cases{display:grid;gap:16px}
+.case{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px;display:grid;gap:12px}
+.case header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline}
+.case .tag{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
+.sar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.sar div{display:grid;gap:4px;align-content:start;min-width:0}
+.sar b{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--bar);font-weight:500}
+.sar .res{color:var(--copper);font-weight:600}
+
+/* method */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;counter-reset:s}
+.steps li{counter-increment:s;border-top:3px solid var(--bar);padding-top:12px;display:grid;gap:6px}
+.steps li::before{content:"Step " counter(s);font-family:var(--mono);font-size:.72rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+
+/* timeline */
+.tl{display:grid;gap:0}
+.job{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job .when{font-family:var(--mono);font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.job div{min-width:0}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.skills ul{margin:8px 0 0;padding-left:18px}
+
+footer{font-size:.85rem;color:var(--muted);padding-left:28px}
+
+@media (max-width:640px){
+  .sar{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr 70px}
+  .row .lbl{grid-column:1/-1}
+  .job{grid-template-columns:1fr;gap:4px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .fill{animation:grow .9s ease-out both}
+  @keyframes grow{from{transform:scaleX(.2);transform-origin:left}to{transform:scaleX(1);transform-origin:left}}
+}
+</style>
+<style>html{color-scheme:light} body{margin:0} img{max-width:100%}
+@media (prefers-color-scheme: dark){html{color-scheme:dark}}</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="hero">
+  <span class="eyebrow">Portfolio · Partner Success &amp; Channel</span>
+  <h1>Himaja A</h1>
+  <p class="role">Partner Success &amp; Channel Manager · Indirect Go-To-Market · Technical Accounts</p>
+  <p class="lede">I grow revenue through partners. Six years across channel, OEM, EPC and distribution accounts, most recently running four parallel targets at Schneider Electric. An electrical engineer by training, so I can talk switchgear with engineers and ROI with buyers.</p>
+  <div class="chips">
+    <span class="chip">India · Remote / Hybrid</span>
+    <span class="chip">B.Tech EEE</span>
+    <span class="chip">MBA (in progress, 2027)</span>
+    <span class="chip">Salesforce CRM</span>
+  </div>
+  <div class="contact">
+    <span id="email">himakrishnareddy@gmail.com</span>
+    <button class="copy" id="copyBtn" type="button">Copy email</button>
+    <a href="https://www.linkedin.com/in/ahimajareddy" target="_blank" rel="noopener">linkedin.com/in/ahimajareddy</a>
+  </div>
+</header>
+
+<section aria-labelledby="book">
+  <span class="eyebrow">Schneider Electric · 2023–2026</span>
+  <h2 id="book">The book I owned</h2>
+  <p class="muted" style="max-width:62ch">Four annual targets, run at the same time, each with a different partner type and buying cycle.</p>
+  <div class="book" role="img" aria-label="Annual targets: Home and Distribution about 9 million dollars, Panel Builder OEM 1.6 million, Contractor 230 thousand, Secure Power 150 thousand">
+    <div class="row"><span class="lbl">Home &amp; Distribution (pan-India)</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="val">~$9.0M</span></div>
+    <div class="row"><span class="lbl">Panel Builder / OEM</span><div class="track"><div class="fill" style="width:17.8%"></div></div><span class="val">$1.6M</span></div>
+    <div class="row"><span class="lbl">Contractor / EPC</span><div class="track"><div class="fill" style="width:2.6%"></div></div><span class="val">$230K</span></div>
+    <div class="row"><span class="lbl">Secure Power</span><div class="track"><div class="fill" style="width:1.7%"></div></div><span class="val">$150K</span></div>
+    <p class="note">Bars drawn to scale. Total ≈ $11M in annual targets. Quarterly revenue targets exceeded by 10%.</p>
+  </div>
+</section>
+
+<section aria-labelledby="impact">
+  <span class="eyebrow">Results</span>
+  <h2 id="impact">Impact in numbers</h2>
+  <div class="metrics">
+    <div class="metric"><span class="n">+10%</span><span class="d">above quarterly revenue targets</span><span class="w">Schneider Electric</span></div>
+    <div class="metric"><span class="n">+20%</span><span class="d">product adoption from ROI-based business reviews</span><span class="w">Schneider Electric</span></div>
+    <div class="metric"><span class="n">+15%</span><span class="d">incremental revenue from renewals and expansion</span><span class="w">Schneider Electric</span></div>
+    <div class="metric"><span class="n">+25%</span><span class="d">subscription revenue growth</span><span class="w">Skill-Lync</span></div>
+    <div class="metric"><span class="n">+18%</span><span class="d">demo-to-conversion rate</span><span class="w">Skill-Lync</span></div>
+    <div class="metric"><span class="n">4–8</span><span class="d">people led, hired and coached</span><span class="w">Skill-Lync</span></div>
+  </div>
+</section>
+
+<section aria-labelledby="work">
+  <span class="eyebrow">Selected work</span>
+  <h2 id="work">Case studies</h2>
+  <div class="cases">
+    <article class="case">
+      <header><h3>Running a four-segment channel book</h3><span class="tag">Schneider Electric · Channel, OEM, EPC</span></header>
+      <div class="sar">
+        <div><b>Situation</b><p>Four parallel targets across distribution, panel builders, contractors and Secure Power, each with different partners and buying cycles.</p></div>
+        <div><b>What I did</b><p>Planned each segment separately, kept one account view across all four, and moved effort to where the quarter needed it.</p></div>
+        <div><b>Result</b><p class="res">Quarterly revenue targets beaten by 10%.</p></div>
+      </div>
+    </article>
+    <article class="case">
+      <header><h3>ROI-based Quarterly Business Reviews</h3><span class="tag">Schneider Electric · Partner reviews</span></header>
+      <div class="sar">
+        <div><b>Situation</b><p>Partners were buying, but not using the full product range.</p></div>
+        <div><b>What I did</b><p>Ran consultative QBRs built on clear ROI cases, showing partners what each product meant for their own margins and projects.</p></div>
+        <div><b>Result</b><p class="res">Product adoption up 20%, and reviews shaped purchase decisions.</p></div>
+      </div>
+    </article>
+    <article class="case">
+      <header><h3>Pipeline and forecast governance</h3><span class="tag">Schneider Electric · Salesforce (bFO)</span></header>
+      <div class="sar">
+        <div><b>Situation</b><p>Leadership needed a reliable view of deals and delivery across many partner accounts.</p></div>
+        <div><b>What I did</b><p>Kept pipeline and forecast data clean in Salesforce, tracked delivery status, and raised risks early.</p></div>
+        <div><b>Result</b><p class="res">Clear visibility for leaders and fewer late surprises.</p></div>
+      </div>
+    </article>
+    <article class="case">
+      <header><h3>Renewals and expansion in Process Automation</h3><span class="tag">Schneider Electric · Strategic accounts</span></header>
+      <div class="sar">
+        <div><b>Situation</b><p>Existing strategic accounts had room to grow.</p></div>
+        <div><b>What I did</b><p>Qualified upsell opportunities, worked with Product, Delivery and Support to clear blockers, and closed renewal and expansion deals.</p></div>
+        <div><b>Result</b><p class="res">15% incremental revenue growth.</p></div>
+      </div>
+    </article>
+    <article class="case">
+      <header><h3>Technical demos and team leadership</h3><span class="tag">Skill-Lync · Customer Success</span></header>
+      <div class="sar">
+        <div><b>Situation</b><p>Engineering professionals (embedded systems, EV) needed to see real value before subscribing.</p></div>
+        <div><b>What I did</b><p>Ran structured discovery and technical demos, and led a 4–8 person team through hiring, coaching and target tracking.</p></div>
+        <div><b>Result</b><p class="res">Subscription revenue +25%, demo-to-conversion +18%.</p></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="how">
+  <span class="eyebrow">Approach</span>
+  <h2 id="how">How I work with partners</h2>
+  <ol class="steps">
+    <li><h3>Plan the account</h3><p class="muted">Targets, people and products for each partner, written down.</p></li>
+    <li><h3>Review on value</h3><p class="muted">QBRs built on ROI, not product lists.</p></li>
+    <li><h3>Govern the pipeline</h3><p class="muted">Clean CRM data, early risk flags, honest forecasts.</p></li>
+    <li><h3>Expand and renew</h3><p class="muted">Upsell where it fits, with Product, Delivery and Support behind it.</p></li>
+  </ol>
+</section>
+
+<section aria-labelledby="career">
+  <span class="eyebrow">Career</span>
+  <h2 id="career">Experience</h2>
+  <div class="tl">
+    <div class="job"><span class="when">Oct 2023 – Apr 2026</span><div><h3>Senior Sales Engineer (Strategic Accounts)</h3><p class="muted">Schneider Electric, Bangalore</p></div></div>
+    <div class="job"><span class="when">Apr 2022 – Apr 2023</span><div><h3>Team Lead, Customer Success &amp; Sales Engineering</h3><p class="muted">Skill-Lync, Bangalore</p></div></div>
+    <div class="job"><span class="when">Dec 2021 – Apr 2022</span><div><h3>Senior Consultant</h3><p class="muted">Jaro Education</p></div></div>
+    <div class="job"><span class="when">Aug 2019 – Nov 2021</span><div><h3>Assistant Manager, Business Development</h3><p class="muted">BYJU'S</p></div></div>
+  </div>
+</section>
+
+<section aria-labelledby="skills">
+  <span class="eyebrow">Toolkit</span>
+  <h2 id="skills">Skills, tools and education</h2>
+  <div class="skills">
+    <div><h3>Partner &amp; channel</h3><ul><li>Channel and partner account management</li><li>Indirect go-to-market</li><li>Partner business reviews</li><li>Renewals and expansion</li><li>Account planning</li></ul></div>
+    <div><h3>Operations &amp; tools</h3><ul><li>Salesforce CRM (Schneider bFO)</li><li>Pipeline governance and forecasting</li><li>MS Excel, PowerPoint, Word</li><li>Reporting and dashboards</li></ul></div>
+    <div><h3>Technical &amp; education</h3><ul><li>LV switchgear and panel products</li><li>B.Tech, Electrical &amp; Electronics Engineering, Siddharth Institute of Engineering and Technology (2013–2017)</li><li>MBA, Anna University (expected 2027)</li></ul></div>
+  </div>
+</section>
+
+<footer>Figures are from my roles as listed. Open to Partner Success, Channel Manager and Partner Account Manager roles.</footer>
+</div>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click',function(){
+  var b=this, t=document.getElementById('email').textContent;
+  function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy email'},1600)}
+  function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press Ctrl+C'}
+  try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
+});
+</script>
+
+</body>
+</html>
